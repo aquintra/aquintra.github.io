@@ -1,46 +1,97 @@
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td
-{
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
   margin:0;
   padding:0;
 }
 
-img {
-  border:0;
+body {
+  background-color: #f6e8dd;
+  font-family: 'Nunito', sans-serif;
 }
 
 ul {
-  list-style:none;
+  list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size:100%;
-  font-weight:normal;
+img {
+  border: 0;
 }
 
-body {
-  background-color: #f6e8dd;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
 }
 
-.aquintra {
-  text-align: center;
+a {
+  color: #d53933;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a:hover {
+  color: #e54741;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
   padding: 0 15px;
+  text-align: center;
 }
 
 .aquintra img {
-  width: 100%;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  margin: 0 auto;
 }
 
-@media (min-width: 650px) {
-  .aquintra img {
-    width: 600px;
-    height: 400px;
+.profile {
+  width: 50%;
+  float: left;
+}
+
+.profile h3 {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+.profile ul {
+  list-style: none;
+}
+
+.profile li {
+  width: 15%;
+  min-height: 30px;
+  display: inline-block;
+}
+
+.hello {
+  width: 100%;
+  padding: 35px 0 0 0;
+}
+
+.hello i {
+  margin-right: 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* LÈ MOBILÈ */
+
+@media (max-width: 768px) {
+  .profile {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
